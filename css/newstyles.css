@@ -1,0 +1,148 @@
+:root {
+    --dark-color: #3e6990;
+    --light-color: #c7c0b8;
+    --third-color: #DB504A;
+    --forth-color: #c6d8d3;
+
+}
+.main-header {
+    background-color: var(--forth-color);
+    padding-left: 10px;
+}
+nav h3 {
+    color: var(--forth-color);
+}
+.content-header-p {
+  color: var(--dark-color);
+  font-weight: bold;
+}
+.about-education-container {
+    margin-top: 10px;
+    color: var(--dark-color)
+}
+.about-education-item3 img {
+    border-radius: 50%;
+    box-shadow: 5px 5px slategray;
+    display: none;
+}
+.contact-container {
+  color: var(--dark-color);
+}
+.justify {
+    text-align: justify;
+}
+.container-header {
+    font-size: 5em;
+    text-shadow: 2px 2px #99999f;
+    color: var(--dark-color)
+  }
+.divider {
+    border-bottom: 1px dashed rgb(28,49,68,.8);
+    padding: 10px 0 5px 0;
+    margin-bottom: 25px;
+}
+h1, h2 {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+  .darker-color {
+    color: var(--dark-color)
+  }
+  .row img {
+    padding: 3px;
+  }
+  footer {
+    background-color: var(--third-color);
+    color: var(--light-color);
+  }
+  footer ul {
+    padding-inline-start: 15px;
+  }
+  
+  footer ul li {
+    list-style-type: none;
+    width: 100%
+  }
+  footer ul li a {
+    text-decoration: none;
+    color: var(--light-color);
+  }
+  .main-footer ul li a:hover, .main-footer ul li a:focus {
+    color: rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+  }
+  footer p {
+    font-size: x-small;
+  }
+  .underline {
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+  .link-clear a{
+    text-decoration:none;
+    color: var(--dark-color);
+  }
+  .link-clear a:hover, .link-clear a:focus {
+    color: slategray;
+  }
+  
+@media screen and (min-width: 576px) {
+    .main-header {
+      padding-left: 40px;
+    }
+    
+    footer ul {
+      padding-inline-start: 45px;
+    }
+    footer ul li {
+      display: inline-block;
+    }
+    
+    
+}
+
+@media screen and (min-width: 725px) {
+    .main-header {
+        text-align: center;
+    }
+    .about-education-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+    .about-education-item1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .about-education-item2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .about-education-item3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        margin-left: 10px;
+        padding: 0 auto;
+    }
+    .about-education-item3 img {
+        max-width: 100%;
+        border-radius: 15px;
+        /* display: initial; */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .content-header-p {
+      text-align: center;
+    }
+    .contact-container {
+        text-align: center;
+    }
+    footer ul li {
+      display: inline-block;
+      width: 30%;
+      text-align: center;
+    }
+}
